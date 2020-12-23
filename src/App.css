@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.MuiTableCell-head{
+  background-color: silver;
+  color: white;
+}
+ul{
+  list-style: none;
+}
+.items li{
+  border: 1px solid silver;
+  padding: 0.8rem 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.pagination{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 1rem 0;
+}
+.pagination li{
+  border: 1px solid silver;
+  margin: 5px;
+  cursor: pointer;
+}
+.pagination li a{
+  padding: 10px;
+  text-decoration: none;
+  color: green;
+  outline: none;
+}
+.pagination li:hover{
+  border: 1px solid blue;
+}
+.pagination li.active{
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.randomButton{
+  border: 1px solid silver;
+  padding: 1rem;
+  text-align: center;
+}
+.randomButton button{
+  padding: 0.5rem 2rem;
+  background-color: green;
+  color: white;
+  border-radius: 5%;
+  border: none;
+  margin:2rem 0;
+}
+@media only screen and (max-width: 600px) {
+ .pagination{
+   display: flex;
+   flex-wrap: wrap;
+ }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* search */
+
+.searchClass{
+  justify-content: center;
+  margin: 1rem 0;
+
 }
