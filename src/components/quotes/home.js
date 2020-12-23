@@ -70,7 +70,6 @@ function Home() {
     }
     const handleSort = () => {
         const sort = items.text;
-        console.log(sort);
         setItems(items.sort())
     }
 
